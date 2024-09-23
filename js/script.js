@@ -1,0 +1,15 @@
+document.getElementById('noakhali-donate-input').addEventListener('input',function(event){
+    if(event.target.value>0){
+        document.getElementById('noakhali-donate-btn').removeAttribute('disabled')
+    }
+})
+document.getElementById('feni-input').addEventListener('input',function(event){
+    if(event.target.value>0){
+        document.getElementById('feni-donate-btn').removeAttribute('disabled')
+    }
+})
+document.getElementById('aid-input').addEventListener('input',function(event){
+    if(event.target.value>0){
+        document.getElementById('aid-donate-btn').removeAttribute('disabled')
+    }
+})
