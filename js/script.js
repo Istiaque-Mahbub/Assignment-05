@@ -97,3 +97,22 @@ document.getElementById('aid-donate-btn').addEventListener('click',function(){
             </div>`
             document.getElementById('history').insertBefore(newDataElement,historyTab.firstChild)
 })
+
+document.getElementById('btn-history').addEventListener('click',function(){
+    document.getElementById('top-donation-btn').classList.remove('bg-[#B4F461]' ,'text-#111111', 'font-bold')
+    document.getElementById('top-donation-btn').classList.add('text-gray-500')
+    document.getElementById('btn-history').classList.add('bg-[#B4F461]' ,'text-#111111', 'font-bold')
+    document.getElementById('btn-history').classList.remove('text-gray-500')
+
+    document.getElementById('all-section-college').classList.add('hidden')
+    document.getElementById('history').classList.remove('hidden')
+})
+
+document.getElementById('top-donation-btn').addEventListener('click',function(){
+    document.getElementById('btn-history').classList.remove('bg-[#B4F461]' ,'text-#111111', 'font-bold')
+    document.getElementById('btn-history').classList.add('text-gray-500')
+    document.getElementById('top-donation-btn').classList.add('bg-[#B4F461]' ,'text-#111111', 'font-bold')
+    document.getElementById('top-donation-btn').classList.remove('text-gray-500')
+    document.getElementById('all-section-college').classList.remove('hidden')
+    document.getElementById('history').classList.add('hidden')
+})
