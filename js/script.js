@@ -116,3 +116,8 @@ document.getElementById('top-donation-btn').addEventListener('click',function(){
     document.getElementById('all-section-college').classList.remove('hidden')
     document.getElementById('history').classList.add('hidden')
 })
+
+document.getElementById('btn-blog').addEventListener('click',function(){
+    window.location.href ='./blog.html'
+})
+

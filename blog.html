@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div>
+        <button id="btn-home" class="btn bg-[#B4F461] px-10 text-xl rounded-lg mb-10">Home</button>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-content">
+          <p>DOM stands for Document Object Model. It gives us the dynamic access of objects.We can go any node or parent node or sibling node or first child or root node using dom.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p>There are many ways to select an element from dom. 
+            1. document.getELementById()-> where you have to give the id of the desired element
+            2. document.getElementsByClassName()-> here we have to give the class name
+            3. document.getElementsByTagName()->this function accepts tag name.
+            4.document.querySelector()-> we have to use . or # before the id or class getElementsByTagName it gives us the first matching element
+            5.document.querySelectorAll()->Return all the matching element 
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p>It prevent us from bubble delegation</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p>By using .classList.add() or .classList.remove() by using tailwind class divided with a comma we can add manipulate styles.Also we can use removeAttribute() or setAttribute()</p>
+        </div>
+      </div>
+      <script src="./js/shared.js"></script>
+</body>
+</html>
