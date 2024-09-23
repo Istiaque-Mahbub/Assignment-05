@@ -35,7 +35,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
 
     const historyTab = document.getElementById('history')
     const newDataElement = document.createElement('div')
-    newDataElement.innerHTML = `<div class="px-10" >
+    newDataElement.innerHTML = `<div class="p-10 bg-[#FFFFFF] shadow-lg" >
                 <h1 class="font-bold text-lg">${inputValue}TK. is donated for ${headText}</h1>
                 <p class="text-xs">Date : ${new Date().toLocaleDateString()} <br>
                 Time : ${new Date().toLocaleTimeString()}
@@ -62,7 +62,34 @@ document.getElementById('feni-donate-btn').addEventListener('click',function(){
 
     const historyTab = document.getElementById('history')
     const newDataElement = document.createElement('div')
-    newDataElement.innerHTML = `<div  class="px-10">
+    newDataElement.innerHTML = `<div  class="p-10 bg-[#FFFFFF] shadow-lg">
+                <h1 class="font-bold text-lg">${inputValue}TK. is donated for ${headText}</h1>
+                <p class="text-xs">Date : ${new Date().toLocaleDateString()} <br>
+                Time : ${new Date().toLocaleTimeString()}
+                </p>
+            </div>`
+            document.getElementById('history').insertBefore(newDataElement,historyTab.firstChild)
+})
+
+document.getElementById('aid-donate-btn').addEventListener('click',function(){
+    const balance = textValueNumber('current-balance')
+    const addAmount = textValueNumber('aid-amount')
+    const inputValue = inputValueNumber('aid-input')
+    const headText = document.getElementById('aid-text').innerText
+    if(balance<inputValue)
+    {
+       return alert('Not Enough Balance');
+    }
+    if(inputValue<0){
+       return alert('Invalid Input')
+    }
+    aidTotal = aidTotal + inputValue
+    document.getElementById('current-balance').innerText = balance - inputValue
+    document.getElementById('aid-amount').innerText = aidTotal
+
+    const historyTab = document.getElementById('history')
+    const newDataElement = document.createElement('div')
+    newDataElement.innerHTML = `<div  class="p-10 bg-[#FFFFFF] shadow-lg">
                 <h1 class="font-bold text-lg">${inputValue}TK. is donated for ${headText}</h1>
                 <p class="text-xs">Date : ${new Date().toLocaleDateString()} <br>
                 Time : ${new Date().toLocaleTimeString()}
