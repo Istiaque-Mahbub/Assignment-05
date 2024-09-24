@@ -33,6 +33,8 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
     document.getElementById('current-balance').innerText = balance - inputValue
     document.getElementById('noakhali-amount').innerText = noakhaliTotal
 
+    document.getElementById('my_modal_1').showModal()
+
     const historyTab = document.getElementById('history')
     const newDataElement = document.createElement('div')
     newDataElement.innerHTML = `<div class="p-10 bg-[#FFFFFF] shadow-lg" >
@@ -59,6 +61,7 @@ document.getElementById('feni-donate-btn').addEventListener('click',function(){
     feniTotal = feniTotal + inputValue
     document.getElementById('current-balance').innerText = balance - inputValue
     document.getElementById('feni-amount').innerText = feniTotal
+    document.getElementById('my_modal_1').showModal()
 
     const historyTab = document.getElementById('history')
     const newDataElement = document.createElement('div')
@@ -86,6 +89,7 @@ document.getElementById('aid-donate-btn').addEventListener('click',function(){
     aidTotal = aidTotal + inputValue
     document.getElementById('current-balance').innerText = balance - inputValue
     document.getElementById('aid-amount').innerText = aidTotal
+    document.getElementById('my_modal_1').showModal()
 
     const historyTab = document.getElementById('history')
     const newDataElement = document.createElement('div')
